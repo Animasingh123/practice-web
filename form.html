@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .contact {
+        background-color: rgb(146, 235, 235);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .divcontact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 75px 0px;
+        width: 60%;
+      }
+      .forms {
+        width: 60%;
+        margin: 10px 0px;
+        padding: 10px 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-family: "Pacifico", cursive;
+      }
+      .btn1 {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: white;
+        color: black;
+        width: 50%;
+        font-family: "Ubuntu", sans-serif;
+        cursor: pointer;
+        border: 2px solid black;
+        border-radius: 15px;
+        font-size: 18px;
+      }
+      .btn1:hover {
+        background-color: tomato;
+        color: white;
+      }
+      .radio {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+      }
+      .form {
+        margin-left: 10px;
+      }
+      .h2 {
+        color: tomato;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <section class="contact" id="contact">
+        <div class="divcontact">
+          <input type="text" class="forms" placeholder="Enter Your Name" />
+          <input type="email" class="forms" placeholder="Enter Your Email" />
+          <input
+            type="password"
+            class="forms"
+            placeholder="Enter Your Password"
+          />
+          <textarea
+            name="text"
+            id="text"
+            cols="30"
+            rows="10"
+            class="forms"
+            placeholder="Elaborate Your Concren"
+          ></textarea>
+          <div class="radio">
+            <input type="radio" class="form" name="gender" /> Male
+            <input type="radio" class="form" name="gender" /> Female
+            <input type="radio" class="form" name="gender" /> Other
+          </div>
+          <br />
+          <h2 class="h2">Which are your favourite P.Ls</h2>
+          <div class="radio check">
+            <input type="checkbox" class="form" /> C <br />
+            <input type="checkbox" class="form" /> Javascript <br />
+            <input type="checkbox" class="form" /> Java <br />
+            <input type="checkbox" class="form" /> Flutter <br />
+          </div>
+          <br />
+          <h2 class="h2">Where are you from ?</h2>
+          <div class="radio">
+            <select name="option" id="">
+              <option value="Val">India</option>
+              <option value="Val">Nepal</option>
+              <option value="Val">USA</option>
+              <option value="Val">China</option>
+            </select>
+          </div>
+          <button class="btn1">Submit</button>
+          <input type="reset" value="Reset" class="btn1" />
+        </div>
+      </section>
+    </form>
+  </body>
+</html>
